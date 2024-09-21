@@ -11,7 +11,7 @@ body {
   padding: 0%;
   width: 1600px;
   height: 900px;
-  background-image: url(/img/woman-6882918\ 1.png);
+  background-image: url(./img/woman-6882918\ 1.png);
 }
 
 .menu {
@@ -159,7 +159,7 @@ body {
   width: 1600px;
   height: 900px;
   position: absolute;
-  background-image: url(/img/Rectangle\ 10.png);
+  background-image: url(./img/Rectangle\ 10.png);
   align-items: center;
 }
 
@@ -185,7 +185,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(/img/Rectangle\ 10.png);
+  background-image: url(./img/Rectangle\ 10.png);
 }
 
 .imagens h1 {
