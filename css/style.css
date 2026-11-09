@@ -1,41 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@500;600&display=swap");
 
 body {
   margin: 0;
   padding: 0%;
   transition: 0.5s;
+  background-color: #101315;
 }
 
 .primeiro {
-  margin: 0%;
-  padding: 0%;
-  width: 1600px;
+  position: relative;
+  box-sizing: border-box;
   height: 900px;
-  background-image: url(../img/woman-6882918\ 1.png);
+  padding: 48px 100px 0;
+  background: url(../img/woman-6882918\ 1.png) center / cover;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-left: 45px;
-  height: 100px;
   display: flex;
-  justify-content: space-between;
-
   align-items: center;
+  height: 40px;
 }
 
 .menu .logo {
-  position: relative;
+  display: block;
   max-width: 95px;
 }
+
 .menu ul {
-  width: 40%;
-  position: relative;
   display: flex;
-  margin-right: 200px;
+  gap: 50px;
+  margin: 0 0 0 122px;
+  padding: 0;
 }
 
 .menu li {
@@ -43,122 +40,105 @@ body {
 }
 
 .menu ul li a {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  text-transform: uppercase;
-  display: inline-block;
+  line-height: 1.6;
   color: #fff;
-  font-weight: 400;
-  margin-left: 40px;
   text-decoration: none;
 }
 
 .number-border {
-  width: 60%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-right: 40px;
+  gap: 24px;
+  margin-left: auto;
 }
 
 .number-border .veja {
-  width: 165px;
+  width: 163px;
   height: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 15px;
   background-color: transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 32px;
-  text-transform: uppercase;
 }
 
 .number-border h4 {
-  font-family: "Montserrat", sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 15px;
-  color: #fff;
+  line-height: 1.6;
 }
 
 .conteudo {
-  padding: 150px 50px;
-}
-
-.texto {
-  position: relative;
-  display: inline-block;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-top: 186px;
 }
 
 .texto h1 {
+  margin: 0 0 23px;
   font-family: "Dela Gothic One", cursive;
   font-weight: 400;
   font-size: 48px;
-  color: #fff;
+  line-height: 1.18;
   text-transform: uppercase;
 }
 
 .texto p {
-  width: 50%;
-  font-family: "Montserrat", sans-serif;
+  width: 464px;
+  margin: 0 0 24px;
   font-weight: 500;
   font-size: 18px;
+  line-height: 1.6;
+}
+
+.choose,
+.prices {
+  width: 163px;
+  height: 48px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
   color: #fff;
+  border-radius: 32px;
 }
 
 .choose {
-  margin-right: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  color: #fff;
+  margin-right: 27px; /* +4px do espaço entre os botões inline = 31px do Figma */
   background-color: #e32966;
-  border-radius: 32px;
-  width: 165px;
-  height: 50px;
   border: none;
-  box-shadow: #d46d8f;
-}
-
-.choose:hover {
-  filter: invert(1);
+  box-shadow: 0 9px 13px rgba(227, 41, 102, 0.3);
 }
 
 .prices {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  color: #fff;
   background-color: transparent;
-  border-radius: 32px;
-  width: 165px;
-  height: 50px;
-  border: 2px solid #e32966;
+  border: 1.5px solid #e32966;
 }
 
+.choose:hover,
 .prices:hover {
   filter: invert(1);
 }
 
 .rodape {
-  margin-left: 55px;
-  display: inline-block;
+  position: absolute;
+  left: 100px;
+  bottom: 63px;
 }
 
-.social a {
-  width: 32px;
-  height: 32px;
-  margin-left: 10px;
-  align-items: center;
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.social img {
+  display: block;
 }
 
 .sobre {
-  width: 1600px;
   height: 900px;
-  background-image: url(../img/Rectangle\ 10.png);
   align-items: center;
 }
 
@@ -184,7 +164,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../img/Rectangle\ 10.png);
 }
 
 .imagens h1 {
